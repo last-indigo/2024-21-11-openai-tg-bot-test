@@ -52,4 +52,6 @@ def chat_with_gpt(message):
        bot.reply_to(message, f"Произошла ошибка: {e}")
 
 # Запуск бота
+
+bot.delete_webhook()
 bot.polling(none_stop=True)
